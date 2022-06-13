@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": false,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "paths": {
+      "@services/*": ["src/app/core/services/*"],
+      "@interfaces/*": ["src/app/core/models/interfaces/*"],
+      "@enums/*": ["src/app/core/models/enums/*"],
+      "@auth/*": ["src/app/core/auth/*"],
+      "@utils/*": ["src/app/core/utils/*"],
+      "@shared/*": ["src/app/shared/*"],
+      "@atoms": ["./src/app/shared/atoms/index.ts"],
+      "@molecules/*": ["src/app/shared/molecules/*"],
+      "@organisms/*": ["src/app/shared/organisms/*"],
+      "@hooks/*": ["src/app/shared/hooks/*"],
+      "@actions/*": ["src/app/store/action/*"],
+      "@reducers/*": ["src/app/store/slices/*"],
+      "@sagas/*": ["src/app/store/sagas/*"],
+    }
+  },
+  "include": [
+    "src"
+  ]
+}

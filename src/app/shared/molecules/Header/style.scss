@@ -1,0 +1,32 @@
+.navbar-expand-lg {
+  .offcanvas-body {
+    .btn-light {
+        width: 100%;
+        border-radius: 0px;
+    }
+    @media screen and (min-width: 992px) {
+      flex-direction: column;
+      align-items: flex-end;
+      .nav-link {
+        padding: 0px 5px;
+        margin-bottom: 10px;
+      }
+      .mobile_link {
+        display: none;
+      }
+      .btn-light {
+        min-width: 160px;
+        padding: 15px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        span {
+            font-size: 18px;
+            margin-left: 10px;
+
+        }
+      }
+    }
+  }
+}
